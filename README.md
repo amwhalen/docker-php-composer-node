@@ -8,7 +8,7 @@ sudo docker run \
     -v /path/to/my/php/docroot:/var/www/html \
     -p 8999:80 \
     --name "php-composer-node" \
-    php-composer-node
+    awhalen/docker-php-composer-node:latest
 ```
 
 Or to use it interactively:
@@ -18,7 +18,7 @@ sudo docker run \
     -it \
     --name "php-composer-node" \
     --entrypoint /bin/bash \
-    php-composer-node
+    awhalen/docker-php-composer-node:latest
 ```
 
 Build the image locally:
