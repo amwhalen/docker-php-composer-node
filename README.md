@@ -12,7 +12,6 @@ sudo docker run \
 ```
 
 Or to use it interactively:
-
 ```
 sudo docker run \
     -it \
