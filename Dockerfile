@@ -28,6 +28,8 @@ RUN apt-get update \
  libxml2-dev \
  libldap2-dev \
  libmcrypt-dev \
+ python-pip \
+ fabric \
  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 

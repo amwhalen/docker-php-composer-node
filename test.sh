@@ -6,3 +6,4 @@ node --version
 drush --version
 wp --version --allow-root
 git --version
+fab --version
