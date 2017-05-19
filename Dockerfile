@@ -135,4 +135,11 @@ RUN a2enmod rewrite headers expires \
   # Preemptively add a user 1000, for use with $APACHE_RUN_USER on osx
   && adduser --uid 1000 --gecos 'My OSX User' --disabled-password osxuser
 
+
+#
+# Python: mkdocs
+#
+RUN pip install mkdocs
+
+
 COPY test.sh /test.sh

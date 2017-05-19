@@ -20,7 +20,7 @@ sudo docker run \
     awhalen/docker-php-composer-node:latest
 ```
 
-Build the image locally:
+Build the image locally from the Dockerfile:
 ```
 sudo docker build -t php-composer-node .
 ```
