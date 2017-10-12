@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:7.1-apache
 MAINTAINER Andrew Whalen <github@amwhalen.com>
 
 ENV APACHE_DOCROOT /var/www/html/web
@@ -34,14 +34,14 @@ RUN apt-get update \
 
 
 #
-# Install Node (via package manager for Debian)
+# Install Node (with NPM), and Yarn (via package manager for Debian)
 #
 # https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 RUN apt-get update \
  && apt-get install -y \
  nodejs
-
+RUN npm install -g yarn
 
 #
 # Install Composer and Drush
@@ -49,7 +49,7 @@ RUN apt-get update \
 ENV PATH "/composer/vendor/bin:$PATH"
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
-ENV COMPOSER_VERSION 1.4.2
+ENV COMPOSER_VERSION 1.5.2
 
 RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/composer/getcomposer.org/da290238de6d63faace0343efbdd5aa9354332c5/web/installer \
  && php -r " \
