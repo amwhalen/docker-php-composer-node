@@ -21,6 +21,7 @@ RUN apt-get update \
  libbz2-dev \
  zlib1g-dev \
  mysql-client \
+ libfontconfig \
  libfreetype6-dev \
  libjpeg62-turbo-dev \
  libpng12-dev \
