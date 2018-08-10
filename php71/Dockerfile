@@ -32,6 +32,7 @@ RUN apt-get update \
  python-pip \
  fabric \
  jq \
+ gnupg \
  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 
