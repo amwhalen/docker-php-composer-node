@@ -24,7 +24,7 @@ RUN apt-get update \
  libfontconfig \
  libfreetype6-dev \
  libjpeg62-turbo-dev \
- libpng12-dev \
+ libpng-dev \
  libicu-dev \
  libxml2-dev \
  libldap2-dev \
